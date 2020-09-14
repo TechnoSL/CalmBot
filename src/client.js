@@ -10,7 +10,7 @@ const readdir = promisify(fs.readdir);
 const client = new Discord.Client({ disableEveryone: true });
 
 client.settings = {
-  prefix: '<',
+  prefix: 'c!',
 };
 
 (async () => {
