@@ -1,3 +1,1 @@
 # CalmBot
-
-## Coming Soon

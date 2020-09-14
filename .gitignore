@@ -1,5 +1,8 @@
-*.json
+# environment variables
+.env
+
+# packages
 node_modules
-arlo
-cat
-dog
+
+# log
+*.log
