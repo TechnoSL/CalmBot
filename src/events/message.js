@@ -14,9 +14,9 @@ const message = async (client, message) => {
     const currentCount = parseInt(message.content, 10);
 
     // Makes sure user does not send message twice in a row
-    // if (message.author.tag === previousMessage.author.tag) {
-    //   return message.delete();
-    // }
+    if (message.author.tag === previousMessage.author.tag) {
+      return message.delete();
+    }
 
     // Checks if it is correct number OR if the message is not a number at all
     if (currentCount != previousCount + 1) {
