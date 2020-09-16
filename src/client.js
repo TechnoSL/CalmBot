@@ -13,7 +13,6 @@ const client = new Discord.Client({ disableEveryone: true });
 
 client.settings = {
   prefix: 'c!',
-  countChannelId: process.env.DISCORD_COUNT_CHANNEL_ID,
 };
 
 (async () => {
