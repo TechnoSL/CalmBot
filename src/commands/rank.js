@@ -18,16 +18,9 @@ const rank = (client, message) => {
       return message.channel.send('That account doesnt even exist!');
     }
 
-    try {
-      socialMedia = player.socialMedia.links.DISCORD;
-    } catch {
-      m.edit('No discord linked to that account');
-      return;
-    }
-
-    if (player.socialMedia.links.DISCORD != message.author.tag) {
-      m.edit(`Your discord does not match the one linked to this account. \nDiscord linked to account: ${player.socialMedia.links.DISCORD}`);
-      return;
+    // null propegation operator ensures it wont throw a referenceerror
+    if (body?.player?.socialMedia?.links?.DISCORD !== message.author.tag) {
+      return message.channel.send(`You have to link your Discord account to Hypixel`);
     }
 
     const player = body.player;
@@ -38,11 +31,11 @@ const rank = (client, message) => {
       'Hypixel Moderator',
       'Hypixel Helper',
       'Hypixel Youtuber',
-      'MVP++',
-      'MVP+',
-      'MVP',
-      'VIP+',
-      'VIP',
+      'Hypixel MVP++',
+      'Hypixel MVP+',
+      'Hypixel MVP',
+      'Hypixel VIP+',
+      'Hypixel VIP',
       'Network Level 250+',
       'Network Level 200+',
       'Network Level 150+',
@@ -103,15 +96,15 @@ const rank = (client, message) => {
     } else if (rank === 'YOUTUBER') {
       role.add(message, 'Hypixel Youtuber');
     } else if (rank === 'SUPERSTAR') {
-      role.add(message, 'MVP++');
+      role.add(message, 'Hypixel MVP++');
     } else if (rank === 'MVP_PLUS') {
-      role.add(message, 'MVP+');
+      role.add(message, 'Hypixel MVP+');
     } else if (rank === 'MVP') {
-      role.add(message, 'MVP');
+      role.add(message, 'Hypixel MVP');
     } else if (rank === 'VIP_PLUS') {
-      role.add(message, 'VIP+');
+      role.add(message, 'Hypixel VIP+');
     } else if (rank === 'VIP') {
-      role.add(message, 'VIP');
+      role.add(message, 'Hypixel VIP');
     }
 
     // applies the network level role
@@ -152,9 +145,10 @@ const rank = (client, message) => {
       role.add(message, '2k-4k AP');
     }
 
-    // role.add(message, 'Linked');
+    // Important!
+    role.add(message, 'Linked');
 
-    message.channel.send('Ranks added!');
+    message.channel.send('Roles added!');
   });
 };
 

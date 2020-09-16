@@ -7,16 +7,16 @@ const message = async (client, message) => {
   if (!message.guild) return;
 
   // #count-to-x channel code so invalid numbers are deleted and channel name is updated
-  if (message.channel.id === client.settings.countChannelId) {
+  if (message.channel.name.startsWith('count-to-')) {
     const messageList = await message.channel.messages.fetch({ limit: 2 });
     const previousMessage = messageList.last();
     const previousCount = parseInt(previousMessage.content, 10);
     const currentCount = parseInt(message.content, 10);
 
     // Makes sure user does not send message twice in a row
-    if (message.author.tag === previousMessage.author.tag) {
-      return message.delete();
-    }
+    // if (message.author.tag === previousMessage.author.tag) {
+    //   return message.delete();
+    // }
 
     // Checks if it is correct number OR if the message is not a number at all
     if (currentCount != previousCount + 1) {
