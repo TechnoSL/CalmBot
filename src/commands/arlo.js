@@ -6,9 +6,9 @@ for (let i = 0; i < 122; i++) {
   imgs.push(`${baseUrl}${i}.jpg`);
 }
 
-const cat = (client, message) => {
+const arlo = (client, message) => {
   const img = imgs[Math.floor(Math.random() * imgs.length)];
-  message.channel.send('', { files: [img] });
+  message.channel.send(img);
 };
 
-module.exports = cat;
+module.exports = arlo;
