@@ -1,7 +1,7 @@
 const request = require('request');
 const role = require('../methods/role.js');
 
-const link = (client, message) => {
+const rank = (client, message) => {
   // Verify arguments
   if (!message.args[0]) {
     return message.channel.send('you gotta put your minecraft username as the argument');
@@ -11,15 +11,23 @@ const link = (client, message) => {
 
   request({ json: true, url: `https://api.hypixel.net/player?key=${process.env.HYPIXEL_API_KEY}&name=${username}` }, (req, res, body) => {
     if (!body.success) {
-      return message.channel.send('the request failed for some reason...');
+      return message.channel.send('The request has failed for some reason!');
     }
 
     if (body.player === null) {
-      return message.channel.send('lol that account doesnt even exist');
+      return message.channel.send('That account doesnt even exist!');
     }
 
-    if (body?.player?.socialMedia?.links?.DISCORD !== message.author.tag) {
-      return message.channel.send('you gotta link your discord account to hypixel');
+    try {
+      socialMedia = player.socialMedia.links.DISCORD;
+    } catch {
+      m.edit('No discord linked to that account');
+      return;
+    }
+
+    if (player.socialMedia.links.DISCORD != message.author.tag) {
+      m.edit(`Your discord does not match the one linked to this account. \nDiscord linked to account: ${player.socialMedia.links.DISCORD}`);
+      return;
     }
 
     const player = body.player;
@@ -144,10 +152,10 @@ const link = (client, message) => {
       role.add(message, '2k-4k AP');
     }
 
-    role.add(message, 'Linked');
+    // role.add(message, 'Linked');
 
-    message.channel.send('account linked, check your roles!');
+    message.channel.send('Ranks added!');
   });
 };
 
-module.exports = link;
+module.exports = rank;
