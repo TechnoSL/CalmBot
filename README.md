@@ -18,6 +18,31 @@ An open source discord bot created for the calm guild community discord server
 - `c!uwu`
 - `c!whathappenedtocommands`
 
+## Roadmap
+
+Here's some features we think we should add to the bot before release to make it more useful
+
+### Image Related
+
+- `c!arlo` ✔️
+
+### Fun
+
+- `c!ship <person1> <person2>` ✔️
+- `c!pingmiqhtie` ✔️
+- `c!whathappenedtocommands` ✔️
+
+
+### Utilities
+
+- `c!rank` ✔️
+- `c!ping` ✔️
+
+### Administrative
+
+- `c!shutdown` ✔️
+
+
 ## Countributing
 
 1. Register a bot on [discord's developer website](https://discord.com/developers/applications)
