@@ -26,8 +26,8 @@ Here's some features we think we should add to the bot before release to make it
 ### Image Related
 
 - `c!arlo` ✔️
-- `c!dog`
-- `c!cat`
+- `c!dog` ✔️
+- `c!cat` ✔️
 - `c!uwu`
 
 ### Fun
@@ -36,7 +36,6 @@ Here's some features we think we should add to the bot before release to make it
 - `c!trivia`
 - `c!pingmiqhtie` ✔️
 - `c!whathappenedtocommands` ✔️
-
 
 ### Utilities
 
@@ -56,7 +55,6 @@ Here's some features we think we should add to the bot before release to make it
 ### Administrative
 
 - `c!shutdown` ✔️
-
 
 ## Countributing
 
