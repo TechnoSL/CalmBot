@@ -17,6 +17,7 @@ An open source discord bot created for the calm guild community discord server
 - `c!shutdown`
 - `c!uwu`
 - `c!whathappenedtocommands`
+- `c!socials`
 
 ## Roadmap
 
@@ -25,18 +26,32 @@ Here's some features we think we should add to the bot before release to make it
 ### Image Related
 
 - `c!arlo` ✔️
+- `c!dog`
+- `c!cat`
+- `c!uwu`
 
 ### Fun
 
 - `c!ship <person1> <person2>` ✔️
+- `c!trivia`
 - `c!pingmiqhtie` ✔️
 - `c!whathappenedtocommands` ✔️
 
 
 ### Utilities
 
+- `c!help`
 - `c!rank` ✔️
 - `c!ping` ✔️
+
+### Info
+
+- `c!applications`
+- `c!reqs`
+- `c!roles`
+- `c!socials` ✔️
+- `c!vouch`
+- `c!waitlist`
 
 ### Administrative
 
