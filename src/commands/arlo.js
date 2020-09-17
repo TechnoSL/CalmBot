@@ -1,13 +1,7 @@
-const baseUrl = 'https://calmbot-images.s3.amazonaws.com/arlo/';
-const imgs = [];
-
-// loop 122 times because there is from 0.jpg to 122.jpg in s3 bucket
-for (let i = 0; i < 122; i++) {
-  imgs.push(`${baseUrl}${i}.jpg`);
-}
+const urls = require('../data/arlo.json');
 
 const arlo = (client, message) => {
-  const img = imgs[Math.floor(Math.random() * imgs.length)];
+  const img = urls[Math.floor(Math.random() * urls.length)];
   message.channel.send(img);
 };
 
