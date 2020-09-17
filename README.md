@@ -2,7 +2,6 @@
 
 An open source discord bot created for the calm guild community discord server
 
-[![Travis (.com) branch](https://img.shields.io/travis/com/CalmGuild/CalmBot/production?style=flat-square)](https://travis-ci.com/github/CalmGuild/CalmBot)
 [![Discord](https://img.shields.io/discord/501501905508237312?style=flat-square)](https://discord.gg/calm)
 [![GitHub last commit](https://img.shields.io/github/last-commit/CalmGuild/CalmBot?style=flat-square)](https://github.com/CalmGuild/CalmBot/commits/master)
 [![GitHub](https://img.shields.io/github/license/CalmGuild/CalmBot?style=flat-square)](https://github.com/CalmGuild/CalmBot/blob/master/LICENSE)
