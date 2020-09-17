@@ -7,18 +7,6 @@ An open source discord bot created for the calm guild community discord server
 [![GitHub last commit](https://img.shields.io/github/last-commit/CalmGuild/CalmBot?style=flat-square)](https://github.com/CalmGuild/CalmBot/commits/master)
 [![GitHub](https://img.shields.io/github/license/CalmGuild/CalmBot?style=flat-square)](https://github.com/CalmGuild/CalmBot/blob/master/LICENSE)
 
-## Commands
-
-- `c!arlo`
-- `c!ping`
-- `c!pingmiqhtie`
-- `c!rank <ign>`
-- `c!ship person1 person2`
-- `c!shutdown`
-- `c!uwu`
-- `c!whathappenedtocommands`
-- `c!socials`
-
 ## Roadmap
 
 Here's some features we think we should add to the bot before release to make it more useful
