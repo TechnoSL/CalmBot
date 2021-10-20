@@ -49,7 +49,7 @@ Here's some features we think we should add to the bot before release to make it
 
 2. Create a fork of this repository and clone it using `git clone`
 
-3. Rename `example.env`to .env and input the correct details into the fields
+3. Rename `example.env`to `.env` and input the correct details into the fields
 
 4. Run `yarn --frozen-lockfile` to install the required npm packages
 
