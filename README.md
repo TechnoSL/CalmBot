@@ -1,6 +1,6 @@
-# CalmBot
-
-An open source discord bot created for the calm guild community discord server
+ CalmBot
+#
+A fork of the Calm Community Discord bot pre TypeScript rewrite (circa december 2020)
 
 [![Discord](https://img.shields.io/discord/501501905508237312?style=flat-square)](https://discord.gg/calm)
 [![GitHub last commit](https://img.shields.io/github/last-commit/CalmGuild/CalmBot?style=flat-square)](https://github.com/CalmGuild/CalmBot/commits/master)
@@ -46,11 +46,17 @@ Here's some features we think we should add to the bot before release to make it
 ## Countributing
 
 1. Register a bot on [discord's developer website](https://discord.com/developers/applications)
-2. Create a fork of this repository and clone it
-3. Create a `.env` files in the root of the repository, input the correct fields from `example.env`
+
+2. Create a fork of this repository and clone it using `git clone`
+
+3. Rename `example.env`to .env and input the correct details into the fields
+
 4. Run `yarn --frozen-lockfile` to install the required npm packages
+
 5. Run `yarn dev` to start the bot
-6. Make sure to create a bug report in the form of a feature request before submitting any PR's for big new features
+
+
+Make sure to create a bug report in the form of a feature request before submitting any PR's for big new features
 
 ## License
 
